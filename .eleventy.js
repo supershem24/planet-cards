@@ -2,9 +2,11 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("styles");
-  eleventyConfig.addShortcode("Card", function(){
-    <div class="cardBackground">
-      <p>Hi, this is a card</p>
-    </div>
+  eleventyConfig.addShortcode("Card", function(planet){
+    return `<section class="cardBackground">
+      <div class=${planet}>
+        
+      </div>
+    </section>`
   })
 };

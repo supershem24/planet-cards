@@ -1,6 +1,11 @@
+:root {
+    --card-background-color: #40D433;
+}
+
 body {
     font-family: Helvetica, sans-serif;
     color: #EAE8FF;
+    display: grid;
     background: #2D3142;
     padding: 0 40px;
     text-align: center;
@@ -52,3 +57,4 @@ img.about {
 .cardBackground {
     background-color: gray;
 }
+
