@@ -5,10 +5,12 @@
 body {
     font-family: Helvetica, sans-serif;
     color: #EAE8FF;
-    display: grid;
     background: #2D3142;
-    padding: 0 40px;
+    padding: 1%;
     text-align: center;
+    height: 93vh;
+    display: grid;
+    grid-template: 1fr 2fr 2fr/repeat(5, 1fr);
 }
 
 nav {
@@ -39,8 +41,10 @@ nav ul li a {
 }
 
 h1 {
-    font-size: 8em;
+    font-size: 3em;
     letter-spacing: -2px;
+    grid-column: 1/6;
+    order: -1;
 }
 
 h1 strong {
@@ -56,5 +60,21 @@ img.about {
 
 .cardBackground {
     background-color: gray;
+    margin: 5%;
+}
+
+#Sun {
+    grid-column: 1/2;
+    grid-row: 2/span 2;
+}
+
+div.Sun {
+    background-color: yellow;
+}
+
+div.Earth {
+    background-color:#40D433;
+    width: 50px;
+    border-radius: 50%;
 }
 
