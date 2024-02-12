@@ -1,6 +1,10 @@
 :root {
     --card-background-color: #4D4d4d;
     --text-color: #F8F8F8;
+    --small-planet-size: 30%;
+    --basic-planet-size: 50%;
+    --big-planet-size: 60%;
+    --huge-planet-size: 80%;
 }
 
 body {
@@ -56,33 +60,33 @@ div {
 }
 
 .Sun {
-    width: 80%;
-    padding-top: 80%;
+    width: var(--huge-planet-size);
+    padding-top: var(--huge-planet-size);
     background-color: #FFFF00;
 }
 
 .Mercury {
-    width: 30%;
-    padding-top: 30%;
+    width: var(--small-planet-size);
+    padding-top: var(--small-planet-size);
     background-color: #708090;
 }
 
 .Venus {
-    width: 45%;
-    padding-top: 45%;
+    width: var(--basic-planet-size);
+    padding-top: var(--basic-planet-size);
     background-color: #F8F6F0;
 }
 
 .Earth {
-    width: 50%;
-    padding-top: 50%;
+    width: var(--basic-planet-size);
+    padding-top: var(--basic-planet-size);
     background: linear-gradient(40deg, #0339f8 0%, #03BB30 100%);
     background-color: #0339f8;
 }
 
 .Mars {
-    width: 30%;
-    padding-top: 30%;
+    width: var(--small-planet-size);
+    padding-top: var(--small-planet-size);
     background-color: #8b0000;
 }
 
@@ -91,26 +95,26 @@ div {
 }
 
 .Jupiter {
-    width: 80%;
-    padding-top: 80%;
+    width: var(--huge-planet-size);
+    padding-top: var(--huge-planet-size);
     background: linear-gradient(0deg, rgba(226,200,90,1) 0%, rgba(253,187,45,1) 100%);
 }
 
 .Saturn {
-    width: 75%;
-    padding-top: 75%;
+    width: var(--huge-planet-size);
+    padding-top: var(--huge-planet-size);
     background-color: #BB9A4B;
 }
 
 .Uranus {
-    width: 60%;
-    padding-top: 60%;
+    width: var(--big-planet-size);
+    padding-top: var(--big-planet-size);
     background-color: #008B8B;
 }
 
 .Neptune {
-    width: 60%;
-    padding-top: 60%;
+    width: var(--big-planet-size);
+    padding-top: var(--big-planet-size);
     background-color: #008BAA;
 }
 
